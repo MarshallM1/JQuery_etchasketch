@@ -1,4 +1,6 @@
 var gridSize = 16;
+var rainbow = false;
+var penColor = '#66ccff';
 
 $(document).ready(function(){
   reset();
@@ -15,5 +17,24 @@ function reset(){
 };
 
 $(document).on('mouseenter', '#grid div', function(){
-  $(this).css("background-color", "#66ccff");
+  if(rainbow == false){
+    $(this).css("background-color", penColor);
+  }
+  else{
+    var rgbR = Math.floor((Math.random() * 256));
+    var rgbB = Math.floor((Math.random() * 256));
+    var rgbG = Math.floor((Math.random() * 256));
+    var randomColor = "rgb(" + rgbR + "," + rgbG + "," + rgbB + ")"
+    $(this).css("background-color", randomColor);
+  }
 })
+
+$(document).on('click', '.colorPicker', function(){
+  rainbow = false;
+  penColor = $(this).val();
+})
+
+
+function rainbowToggle(){
+  rainbow = !rainbow;
+}

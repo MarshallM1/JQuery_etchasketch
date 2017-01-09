@@ -5,7 +5,7 @@ ul {
   width: 200px;
   height: 100%;
   position: fixed;
-  background-color: #f1f1f1;
+  background-color: lightgrey;
   overflow: auto;
 }
 
@@ -13,6 +13,7 @@ li{
   display: block;
   text-decoration: none;
   text-align: center;
+  padding: 10px;
 }
 
 body{
@@ -21,6 +22,16 @@ body{
 
 input{
   width: 50%;
+}
+
+button{
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: #66ccff;
 }
 
 #grid{
