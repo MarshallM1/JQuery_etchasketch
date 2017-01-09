@@ -1,0 +1,44 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+
+li{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+body{
+  margin: 0;
+}
+
+input{
+  width: 50%;
+}
+
+#grid{
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  background-color: lightgrey;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  -moz-box-shadow: 0px 0px 10px #000000;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.box{
+  display: inline-block;
+}
